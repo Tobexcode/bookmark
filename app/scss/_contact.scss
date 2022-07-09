@@ -1,0 +1,52 @@
+.contact{
+    background-color: $softBlue;
+
+    text-align: center;
+
+    P{
+        display: inline-block;
+        color: $white;
+        margin-top: 74px;
+        font-size: $font-small;
+    }
+    h2{
+        color: $white;
+    }
+    &__container{
+        max-width: 400px;
+        margin: 0 auto;
+        // background-color: $softBlue;
+    }
+    &__text{
+        // order: 1;
+        border: 0;
+        padding: 0.8125rem 1.7rem;
+        // width: 100px;
+        // height: 1.5625rem;
+        // padding: 0 10px;
+        font-size: $font-small;
+        border-radius: 5px;
+        outline: 0;
+
+       
+    }
+     &__btn{
+        position: relative;
+        display: inline-block;
+        padding: 0.875rem 1rem;
+        border: 0px solid #fa5757;
+        color: $white;
+        border-radius: 5px;    
+        cursor: pointer;
+        font-weight: 400;
+        font-size: $font-small;
+        background: $softRed;
+        overflow: hidden;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        &__search{
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+}

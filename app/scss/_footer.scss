@@ -1,0 +1,101 @@
+.footer{
+
+    background-color: $darkBlue;
+    color: white;
+    padding: 2.5rem;
+    text-align: center;
+
+    // a:not(:last-child){
+    //     display: inline-block;
+    //     margin-right: 35px;
+
+
+    //     @include breakpoint-down(medium){
+    //         margin: 0px;
+    //     }
+    // }
+    .container{
+        display: flex; 
+        justify-content: space-between;
+        @include breakpoint-down(medium){
+            flex-direction: column;
+        }
+    }
+    &__first{
+        display: flex;
+        
+         a{
+            margin-right: 64px;
+
+            @include breakpoint-down(medium){
+                margin-right: 0;
+                }
+        }
+        @include breakpoint-down(medium){
+        flex-direction: column;
+        }
+       
+
+        // a:not(:last-child){
+        //     display: inline-block;
+        //     margin-right: 1rem;
+        // }
+    }
+    &__link{
+        align-items: center;
+        a:not(:last-child){
+            display: inline-block;
+            margin-right: 35px;
+    
+    
+            @include breakpoint-down(medium){
+                margin-right: 0px;
+
+                
+            }
+        }
+
+        @include breakpoint-down(medium){
+            display: flex;
+            flex-direction: column;
+        }
+        
+        a{
+           color: $white; 
+           font-size: 1.075rem;
+           @include breakpoint-down(medium){
+               margin-bottom: 37px;
+           }
+
+        
+           &:hover {
+            color: $softRed;
+        
+          }
+        }
+        
+        
+    }
+    &__bookmark{
+        margin-right: 50px;
+
+        @include breakpoint-down(medium){
+            padding-bottom: 40px;
+        }
+    }    
+    &__facebook{
+        margin-right: 40px;
+    }
+
+    &__icon{
+        a{
+            margin-right: 40px;
+        }
+        
+        a:not(:last-child){
+            margin-right: 40px;
+        }
+
+    }
+}
+

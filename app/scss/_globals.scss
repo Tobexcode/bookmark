@@ -1,0 +1,309 @@
+html {
+    font-size: 100%;
+    box-sizing: boarder-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'public Sans', sans-serif;
+    font-weight: 400;
+    font-size: $font-med;
+    color: $grayishBlue;
+    line-height: 1.3;
+    overflow-x: hidden;
+    min-height: 200vh;
+
+    @include breakpoint-up(large){
+        font-size: $font-med;
+    }
+
+    &.noscroll {
+        overflow: hidden;
+    }
+}
+
+h1, h2, h3{
+   margin-top: 0;
+   font-weight: 300;
+   line-height: 1.15;
+   color: $darkBlue;
+}
+
+h1  {
+    font-weight: 500;
+    font-size: 2.31rem;
+    margin-bottom: 1.5rem; 
+    font-weight: bold;
+
+    @include breakpoint-up(large) {
+        font-size: $font-xlg;
+    }
+} 
+
+h2{
+    font-size: 1.875rem;
+    margin-bottom: 1.5625rem;
+    font-weight: bold;
+
+    @include breakpoint-up(large){
+        font-size: 2.25rem;
+        margin-bottom: 2.25rem;
+    }
+}
+h3{
+    margin: 0rem;
+    margin-block-end: 0;
+}
+
+p {
+    line-height: 1.5rem;
+    margin-bottom: 2.25rem;
+    @include breakpoint-down(medium){
+        margin-left: 38px;
+        margin-right: 38px;
+  
+      }
+}
+
+a, a:visited, a:hover {
+    text-decoration: none;
+    
+    
+
+}
+
+//spa.cing
+.container {
+    max-width: 69.375rem;
+    margin: 0 auto;
+    
+
+    &--pall {
+        padding-top: 4.375rem;
+        padding-bottom: 4.375rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+
+        @include breakpoint-up(large){
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+    }
+
+    &--py {
+        padding-top: 4.375rem;
+        padding-bottom: 4.375rem;
+
+        @include breakpoint-up(large){
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+    }
+    &--px {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    &--pt {
+        padding-top: 4.375rem;
+
+        @include breakpoint-up(large){
+            padding-top: 6rem;
+        }
+    }
+    &--pb {
+        padding-bottom: 4.375rem;
+
+
+        @include breakpoint-up(large){
+            padding-bottom: 6rem;
+        }
+    }
+    &--pl {
+        padding-left: 1.5rem;
+    }
+    &--pr {
+        padding-right: 1.5rem;
+    }
+
+}
+// Flexbox
+
+.flex {
+    display: flex;
+
+    &-jc-sb{
+        justify-content: space-between;
+    }
+    &-jc-c{
+        justify-content: center;
+    }
+    &-ai-c{
+        align-items: center;
+    }
+    
+
+}
+
+// Buttons
+button, .button {
+    position: relative;
+    display: inline-block;
+    padding: 0.875rem 2.1875rem;
+    color: $white;
+    border-radius: 5px;    
+    cursor: pointer;
+    font-weight: 400;
+    font-size: $font-small;
+    background: $white;
+    overflow: hidden;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+
+    @include breakpoint-down(medium){
+        padding: 0.875rem 1rem;
+    }
+    
+        // &::before {
+        //     content: "";
+        //     position: absolute;
+        //     top: 0;
+        //     right: 0;
+        //     bottom: 0;
+        //     left: 0;
+        //     background-color: rgba(255, 255, 255, 0.25);
+        //     opacity: 0;
+        //     transition: opacity 150ms ease-in-out;
+
+        // }
+
+        // &:hover::before {
+        //     opacity: 1;
+        // }
+
+
+}
+buttonmobile, .buttonmobile {
+    position: relative;
+    display: inline-block;
+    padding: 0.875rem 1rem;
+    color: $white;
+    border-radius: 5px;    
+    cursor: pointer;
+    font-weight: 400;
+    font-size: $font-small;
+    background: $white;
+    overflow: hidden;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    
+        // &::before {
+        //     content: "";
+        //     position: absolute;
+        //     top: 0;
+        //     right: 0;
+        //     bottom: 0;
+        //     left: 0;
+        //     background-color: rgba(255, 255, 255, 0.25);
+        //     opacity: 0;
+        //     transition: opacity 150ms ease-in-out;
+
+        // }
+
+        // &:hover::before {
+        //     opacity: 1;
+        // }
+
+
+}
+
+.contactbutton{
+    color: #fff;
+    border: 3px solid $softRed;
+    background-color: $softRed;
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    transition: background 300ms ease-in-out; 
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+.headerbutton{
+    color: #fff;
+    border: 3px solid $softRed;
+    background-color: $softRed;
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    transition: background 300ms ease-in-out; 
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+.headerbutton:hover{
+    background-color: $white;
+    border: 3px solid $softRed;
+    background-position: 100%;
+    color: $softRed;
+}
+.headerbutton2{
+    color: #fff;
+    border: 3px solid $softBlue;
+    background-color: $softBlue;
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    transition: background 300ms ease-in-out;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); 
+}
+.headerbutton2:hover{
+    background-color: $white;
+    border: 3px solid $softBlue;
+    background-position: 100%;
+    color: $softBlue;
+}
+.headerbutton3{
+    color: $darkBlue;
+    border: 3px solid $lightGrayishBlue;
+    background-color: $lightGrayishBlue;
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    transition: background 300ms ease-in-out; 
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+.headerbutton3:hover{
+    background-color: $white;
+    border: 3px solid $darkBlue;
+    background-position: 100%;
+    color: $darkBlue;
+}
+
+.headerbutton4{
+    color: #fff;
+    border: 3px solid $softBlue;
+    background-color: $softBlue;
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    transition: background 300ms ease-in-out;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+// Visibility
+
+.hide-for-mobile {
+    @include breakpoint-down(medium) {
+        display: none;
+    }
+}
+
+.hide-for-desktop {
+    @include breakpoint-up(large) {
+        display: none;
+    }
+}
+

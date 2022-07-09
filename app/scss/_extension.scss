@@ -1,0 +1,140 @@
+.extension{
+    margin-top: 150px;
+
+
+    &__text{
+        text-align: center;
+
+        p{
+            max-width: 540px;
+            display: inline-block;
+            margin-top: 0;
+            margin-bottom: 90px;
+        
+         @include breakpoint-down(medium){
+            min-width: none;
+            max-width: none;
+            margin-left: 38px;
+            margin-right: 38px;
+        }
+        }
+
+       
+    }
+
+
+    &__img{
+        margin-top: 40px;
+    }
+
+    &__card {
+        // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 12px 12px rgba(0,0,0,0.15);
+        max-width: 280px;
+        margin: auto;
+        text-align: center;
+        border-radius: 10px;
+        min-height: 0;
+        max-height: 378px;
+        margin-top: 0;
+        margin-bottom: 0;
+        transition: all 150ms ease-in-out;
+
+        &:hover{
+            transform: scale(1.05);
+        }
+
+        @include breakpoint-down(medium){
+            margin-bottom: 60px;
+        }
+      }
+    &__card1 {
+        // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 12px 12px rgba(0,0,0,0.15);
+        max-width: 280px;
+        margin: auto;
+        text-align: center;
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+
+        &:hover{
+            transform: scale(1.05);
+        }
+
+        @include breakpoint-up(large){
+            margin-top: 40px;
+        }
+        @include breakpoint-down(medium){
+            margin-bottom : 60px;
+        }
+
+      }
+    &__card2 {
+        // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 12px 12px rgba(0,0,0,0.15);
+        max-width: 280px;
+        margin: auto;
+        text-align: center;
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+
+        &:hover{
+            transform: scale(1.05);
+        }
+
+        @include breakpoint-up(large){
+            margin-top: 80px;
+        }
+
+      }
+
+
+      &__dot{
+
+        &:not(:last-child){
+            margin-bottom: 3px;
+        }
+        //   margin-bottom: 3px;
+      }
+
+      &__cards{
+
+        @include breakpoint-up(large){
+            grid-template-columns: repeat(3, 1fr);
+            display: flex;
+        }
+          
+      }
+
+      &__p{
+          margin-bottom: 20px;
+          font-size: $font-small;
+      }
+      h3{
+          font-weight: bold;
+          margin-top: 30px;
+      }
+
+      &__button{
+          margin-top: 23px;
+          margin-bottom: 23px;
+      }
+
+
+}
+
+.dot {
+    height: 3px;
+    width: 3px;
+    background-color: #DCDAE7;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
+}
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  
